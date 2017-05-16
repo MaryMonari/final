@@ -18,9 +18,9 @@ li {
   list-style: none;
 }
 .radio {
-display:block;
+
 width:auto;
-float:left;
+display: inline-block;
 margin-right:20px;
 }
 .fa-smile-o {
