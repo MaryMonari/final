@@ -2,7 +2,7 @@ $(document).ready(function(){
  $("#button").click(function(){
         var x = $("radio").serializeArray();
        $.each(x, function(i, field){
-           $("#results").show(name.value);
+           $("#results").text(name.value);
 
        });
         event.preventDefault();
@@ -52,4 +52,14 @@ $(document).ready(function(){
       // }
       // .console.log(dataObj ["name"]);
       // .show(dataObj ["value"]);
+
+      function myMap() {
+    var mapOptions = {
+        center: new google.maps.LatLng(1°17′S 36°49′E),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    }
+
 });
